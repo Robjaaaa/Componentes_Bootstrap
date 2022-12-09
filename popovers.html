@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>16. Popovers</h2>
+    <h5>This component create a small box with tittle and text right next to the button.</h5>
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <h5>Disabled elements</h5>
+    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+        <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+    </span>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            var popoverList = popoverTriggerList.map(function(element){
+                return new bootstrap.Popover(element);
+            });
+        });
+    </script>
+</body>
+</html>
