@@ -1,0 +1,30 @@
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+.textuno{
+    text-align: center;
+    font-size: 50px;
+    color:dodgerblue;
+}
+.textdos{
+    text-align: center;
+    font-size: 50px; 
+}
+
+
+section{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.card{
+    margin: 10px;
+}
